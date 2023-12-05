@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Secure Your 2024 Seat</title>
+</head>
+
+<header>
+    <div class="logo">
+        <h6>Technostudy Online School</h6>
+        <img src="img/logo.png" alt="Technostudy logo">
+    </div>
+    <nav>
+        <ul class="mega-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li class="mega-menu-item">
+                <a href="#">Our School</a>
+                <div class="mega-menu-content">
+                    <ul>
+                        <li><a href="#">Accreditation</a></li>
+                        <li><a href="#">School Culture</a></li>
+                        <li><a href="#">Primary School</a></li>
+                        <li><a href="#">High School</a></li>
+                        <li><a href="#">How Technostudy Works</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mega-menu-item">
+                <a href="#">Curriculum</a>
+                <div class="mega-menu-content">
+                    <ul>
+                        <li><a href="#">Cambridge Curriculum</a></li>
+                        <li><a href="#">CAPS Curriculum</a></li>
+                        <li><a href="#">Free Curriculum</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="extramurals.html">Extramurals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons">
+        <button>Download Info Pack</button>
+        <button>Login</button>
+        <button>Enrol</button>
+    </div>
+</header>
+
+
+<body>
+    <div class="header">
+        <img src="header-image.jpg" alt="Header Image">
+        <h1>Secure your 2024 seat</h1>
+    </div>
+    
+    <div class="form-container">
+        <!-- Application Form -->
+        <form id="application-form">
+            <!-- Contact Information -->
+            <div class="form-section">
+                <h2>Contact Information</h2>
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Surname*</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="mobile-number">Mobile number*</label>
+                <input type="text" id="mobile-number" name="mobile-number" required>
+
+                <label for="whatsapp-number">Is this number also your WhatsApp number?*</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="whatsapp-yes" name="whatsapp-number" value="Yes">
+                    <label for="whatsapp-yes">Yes</label>
+
+                    <input type="checkbox" id="whatsapp-different" name="whatsapp-number" value="I use a different number for WhatsApp">
+                    <label for="whatsapp-different">I use a different number for WhatsApp</label>
+
+                    <input type="checkbox" id="whatsapp-no" name="whatsapp-number" value="I don't have WhatsApp">
+                    <label for="whatsapp-no">I don't have WhatsApp</label>
+                </div>
+
+                <label for="nationality">Nationality*</label>
+                <select id="nationality" name="nationality" required>
+                    <option value="" disabled selected>Please select</option>
+                    <!-- Include options for nationality -->
+                </select>
+
+                <label for="preferred-language">Preferred Language*</label>
+                <p>Technostudy sends most communications via email in English. Let us know if you would prefer communications in another language.</p>
+                <select id="preferred-language" name="preferred-language">
+                    <option value="" disabled selected>Please select</option>
+                    <option value="english">English</option>
+                    <option value="afrikaans">Afrikaans</option>
+                </select>
+            </div>
+   
+            <!-- Application Details -->
+            <div class="form-section">
+                <h2>Application Details</h2>
+                <label for="learning-format">Learning Format*</label>
+                <select id="learning-format" name="learning-format" required>
+                    <option value="100-live">100% Live</option>
+                    <option value="50-live-50-recorded">50% Live + 50% Recorded</option>
+                    <option value="100-recorded">100% Recorded</option>
+                </select>
+
+                <label for="school-fees">How do you prefer to pay your school fees?*</label>
+                <!-- Include input fields for school fees options -->
+
+                <!-- Learning Format -->
+                <label for="learning-format">Learning Format*</label>
+                <p>Choose a format:</p>
+                <p>100% Live Lessons: From R3 600 per month - Participate in a full school day’s scheduled live lessons taught by qualified teachers according to your daily timetable. All live lessons are recorded to revisit later.</p>
+
+                   
+                <p>50% Live + 50% Recorded Lessons: From R2 600 per month - Participate in scheduled live lessons taught by qualified teachers according to your daily timetable, and for the other half of the day’s coursework watch pre-recorded lessons in your own time to stay on track. All live lessons are recorded to revisit later.</p>
+
+                 <p>Recorded Lessons: From R2 100 per month - Watch pre-recorded lessons taught by qualified teachers at a time you choose to stay on track with your daily coursework.</p>
+
+                <!-- Payment Preference -->
+                <label for="payment-preference">How do you prefer to pay your school fees?*</label>
+                <select id="payment-preference" name="payment-preference">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="eft">EFT</option>
+                    <option value="card">CARD</option>
+                    <option value="caiptec">CAIPTEC</option>
+                </select>
+
+                <!-- How did you hear about Teneo? -->
+                <label for="hear-about-teneo">How did you hear about Teneo?*</label>
+                <select id="hear-about-teneo" name="hear-about-teneo">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="google">Google</option>
+                    <option value="x">X</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+
+                <!-- Encouragement to Enroll -->
+                <label for="encouragement">What encouraged you to enrol your child at Teneo Online School?*</label>
+                <div class="checkbox-group">
+                    <!-- Include options for encouragement -->
+                    <!-- ... -->
+                </div>
+
+                <!-- Preferred Start Term -->
+                <label for="start-term">Which term would you like to start next year?*</label>
+                <select id="start-term" name="start-term">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="term-1">Term 1</option>
+                    <option value="term-2">Term 2</option>
+                    <option value="term-3">Term 3</option>
+                    <option value="term-4">Term 4</option>
+                    <option value="not-sure">Not sure, still researching</option>
+                </select>
+            </div>
+
+            <!-- Student Details -->
+            <div class="form-section">
+                <h2>Student Details</h2>
+                <label for="number-of-students">How many students are you booking for?*</label>
+                <!-- Include input fields for number of students, grades, etc. -->
+
+                <label for="grades">What grades are you interested in enrolling for?*</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="grade-r" name="grades" value="Grade R">
+                    <label for="grade-r">Grade R</label>
+
+                    <!-- Repeat the above block for other grade options -->
+                </div>
+
+                <label for="curriculums">What curriculums are the students currently learning?*</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="dbe-caps" name="curriculums" value="DBE Caps">
+                    <label for="dbe-caps">DBE Caps</label>
+
+                    <!-- Repeat the above block for other curriculum options -->
+                </div>
+
+                <label for="academic-concessions">Do any of the students have any academic concessions?*</label>
+                <select id="academic-concessions" name="academic-concessions">
+                    <option value="" disabled selected>Please select</option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="not-sure">Not sure</option>
+                </select>
+
+                <label for="language">What language are the students' subjects currently taught in?*</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="english" name="language" value="English">
+                    <label for="english">English</label>
+
+                    <input type="checkbox" id="afrikaans" name="language" value="Afrikaans">
+                    <label for="afrikaans">Afrikaans</label>
+                </div>
+
+                <label for="school-type">What type of school(s) do the students currently attend?*</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="public" name="school-type" value="Public">
+                    <label for="public">Public</label>
+
+                    <!-- Repeat the above block for other school type options -->
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

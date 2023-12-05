@@ -12,48 +12,419 @@
     <!-- Link to External CSS File -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- JS script for the header section-->
+    <script src="script.js"></script>
+
     <title>Technostudy Online School</title>
 </head>
+
+<header>
+    <div class="logo">
+        <h6>Technostudy Online School</h6>
+        <img src="img/logo.png" alt="Technostudy Online's logo">
+    </div>
+    <nav>
+        <ul class="mega-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li class="mega-menu-item">
+                <a href="#">Our School</a>
+                <div class="mega-menu-content">
+                    <ul>
+                        <li><a href="accreditation.html">Accreditation</a></li>
+                        <li><a href="#">School Culture</a></li>
+                        <li><a href="#">Primary School</a></li>
+                        <li><a href="#">High School</a></li>
+                        <li><a href="#">How Technostudy Works</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mega-menu-item">
+                <a href="#">Curriculum</a>
+                <div class="mega-menu-content">
+                    <ul>
+                        <li><a href="cambridge-curriculum.html">Cambridge Curriculum</a></li>
+                        <li><a href="caps-curriculum.html">CAPS Curriculum</a></li>
+                        <li><a href="free-curriculum.html">Free Curriculum</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="extramural.html">Extramurals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons">
+        <a href = "#">Download Info Pack</a>
+        <a href = "register.html">Login</a>
+        <a href="reserve-your-seat.html">Enrol</a>
+    </div>
+</header>
+
 <body>
+
     <!-- Header section with a CSS header -->
+       
     <header class="header">
         <h1>Welcome to Technostudy Online School</h1>
         <p>Your Gateway to Interactive Learning</p>
+        <div class="slider">
+            <img src="img/img1.jpeg" alt="Image 1">
+            <img src="img/img.jpeg" alt="Image 2">
+            <img src="img/img2.jpeg" alt="Image 3">
+        </div>
+    <!-- ...rest of your content... -->
     </header>
 
-    <!-- Navigation menu with semantic HTML -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <section class="horizontal-section">
+        <div class="content">
+            <h2>Discover Our Online Learning Experience</h2>
+            <p>Explore our interactive courses and collaborative extracurricular activities. Join us to begin your educational journey.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <img src="img/img1.jpeg" alt="Horizontal Section Image">
+    </section>
+    
+    <section class="horizontal-section reverse">
+        <img src="img/img.jpeg" alt="Horizontal Section Image">
+        <div class="content">
+            <h2>Our Vision for Interactive Learning</h2>
+            <p>At Technostudy Online School, we are dedicated to creating immersive learning experiences that engage and empower students. Join us on this exciting journey to revolutionize education.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+    
 
-    <!-- Main content section with semantic HTML -->
-    <main>
-        <section>
-            <h2>Our Purpose</h2>
-            <p>At Technostudy Online School, our purpose is to provide a world-class education accessible to students everywhere. We believe in harnessing the power of technology to create an engaging and interactive learning environment that prepares students for a rapidly changing world.</p>
-        </section>
+    <section class="card-container">
+        <div class="card">
+            <img src="img/img.jpeg" alt="Card 1 Image">
+            <h2>Card 1</h2>
+            <p>This is the content of card 1. You can add a brief description here.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="img/img1.jpeg" alt="Card 2 Image">
+            <h2>Card 2</h2>
+            <p>This is the content of card 2. You can add a brief description here.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="img/img3.jpeg" alt="Card 3 Image">
+            <h2>Card 3</h2>
+            <p>This is the content of card 3. You can add a brief description here.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Our Mission</h2>
-            <p>Our mission is to revolutionize education by offering innovative and immersive learning experiences. We strive to empower students with the skills and knowledge they need to excel academically, think critically, and become lifelong learners. We are committed to nurturing independent thinkers and global citizens.</p>
-        </section>
+    <section class="feature-section">
+        <div class="feature-card">
+            <i class="fas fa-book"></i>
+            <h3>Online Learning Content</h3>
+            <p>Access interactive and engaging online courses designed to enhance your learning experience.</p>
+        </div>
+    
+        <div class="feature-card">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h3>Certified Teachers</h3>
+            <p>Learn from experienced and certified teachers who are dedicated to your academic success.</p>
+        </div>
+    
+        <div class="feature-card">
+            <i class="fas fa-desktop"></i>
+            <h3>Live & Recorded Lessons</h3>
+            <p>Participate in live lessons and access recorded lessons for flexible learning options.</p>
+        </div>
+    
+        <div class="feature-card">
+            <i class="fas fa-clipboard-check"></i>
+            <h3>Student Tracker</h3>
+            <p>Monitor your progress and track your academic achievements through our student tracking system.</p>
+        </div>
+    
+        <div class="feature-card">
+            <i class="fas fa-clock"></i>
+            <h3>Flexible Schooling Options</h3>
+            <p>Choose the schedule and pace that suits your needs with our flexible schooling options.</p>
+        </div>
+    
+        <div class="feature-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Recognised Qualifications</h3>
+            <p>Obtain qualifications that are recognized and respected in the world of education.</p>
+        </div>
+    </section>
+<!--How it works-->
+    <section class="how-it-works-section">
+        <div class="how-it-works-content">
+            <div class="video">
+                <!-- Your video embed code or link goes here -->
+                <iframe width="560" height="315" src="https://youtu.be/0OrKaSRUT7o?si=YnJkz4Quf9IJdQJS" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>How It Works</h2>
+                <p>Watch this video to learn more about how Technostudy Online School can benefit your child's education. Our platform is designed to provide interactive and engaging learning experiences.</p>
+                <a href="#" class="btn">Watch Video</a>
+            </div>
+        </div>
+    </section>
+    <!--Another How it works section-->
+    <section class="how-it-works-section">
+        <div class="how-it-works-content">
+            <div class="text-content">
+                <h2>How It Works</h2>
+                <p>Watch this video to learn more about how Technostudy Online School can benefit your child's education. Our platform is designed to provide interactive and engaging learning experiences.</p>
+                <a href="#" class="btn">Watch Video</a>
+            </div>
+            <div class="video">
+                <!-- Your video embed code or link goes here -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!--Discounts section-->
+    <section class="discounts-section">
+        <div class="image-container">
+            <img src="discount-image.jpg" alt="Discount Image">
+        </div>
+        <div class="text-container">
+            <h2>Discounts</h2>
+            <p>We offer the following discounts:</p>
+            <ul>
+                <li>Annual discount: 5% if you pay 12 months upfront.</li>
+                <li>Sibling discount: When you enroll more than one high school student, each additional sibling will receive a 5% discount.</li>
+            </ul>
+            <p>Learners are only eligible for 1 discount on their fees.</p>
+        </div>
+    </section>
 
-        <section>
-            <h2>Value Proposition</h2>
-            <p>At Technostudy Online School, we present our curricula in an interactive, engaging, and effective way for virtual school students. We place students within subjects according to their abilities, letting them progress faster where they are gifted and work at a more deliberate pace to master the content they struggle with. Through vibrant seminars, the rigorous curriculum challenges students to reason analytically, think creatively, and argue critically. Beyond the classroom, collaborative extracurricular activities cultivate lasting relationships among students and teachers. The school’s supportive environment fosters independence, the strength of character, and a lifelong pursuit of knowledge.</p>
-        </section>
-    </main>
+
+    <!--Testimonial section-->
+    <section class="testimonial-section">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"I love the interactive lessons and the support from teachers. Technostudy Online School has truly transformed my learning experience."</p>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="testimonial-author">
+                    <img src="student1.jpg" alt="Student 1">
+                    <p>John Doe</p>
+                </div>
+            </div>
+    
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The quality of education here is top-notch. I'm proud to be a part of Technostudy Online School."</p>
+                    <div class="rating">
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                        <span>&#9733;</span>
+                    </div>
+                </div>
+                <div class="testimonial-author">
+                    <img src="student2.jpg" alt="Student 2">
+                    <p>Jane Smith</p>
+                </div>
+            </div>
+            <!-- Add more testimonial cards as needed -->
+        </div>
+    </section>
+    
+    <!--Call out banner-->
+<div class="callout-banner">
+    <div class="callout-text">
+        <h3>Ready to join the school of the future?</h3>
+        <p>Applications for 2024 are open and space is limited.</p>
+        <a href="#" class="btn">Chat With Our Admissions Team</a>
+        <a href="#" class="btn">Start Your Application Today</a>
+    </div>
+</div>
+
+<!--Blog section-->
+<section class="blog-section">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-post">
+        <div class="blog-image">
+            <img src="blog1.jpg" alt="Blog Post 1">
+        </div>
+        <div class="blog-content">
+            <h3>Blog Post Title 1</h3>
+            <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+            <a href="blog-post-1.html" class="read-more-link">Read More</a>
+        </div>
+    </div>
+
+</section>
+<section class="blog-section">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-container">
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="blog1.jpg" alt="Blog Post 1">
+            </div>
+            <div class="blog-content">
+                <h3>Blog Post Title 1</h3>
+                <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+                <a href="blog-post-1.html" class="read-more-link">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="blog2.jpg" alt="Blog Post 2">
+            </div>
+            <div class "blog-content">
+                <h3>Blog Post Title 2</h3>
+                <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+                <a href="blog-post-2.html" class="read-more-link">Read More</a>
+            </div>
+        </div>
+        <!-- Repeat the blog-post structure to create a 3x3 grid -->
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="blog2.jpg" alt="Blog Post 2">
+            </div>
+            <div class "blog-content">
+                <h3>Blog Post Title 2</h3>
+                <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+                <a href="blog-post-2.html" class="read-more-link">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="blog2.jpg" alt="Blog Post 2">
+            </div>
+            <div class "blog-content">
+                <h3>Blog Post Title 2</h3>
+                <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+                <a href="blog-post-2.html" class="read-more-link">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="blog2.jpg" alt="Blog Post 2">
+            </div>
+            <div class "blog-content">
+                <h3>Blog Post Title 2</h3>
+                <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+                <a href="blog-post-2.html" class="read-more-link">Read More</a>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="blog2.jpg" alt="Blog Post 2">
+            </div>
+            <div class "blog-content">
+                <h3>Blog Post Title 2</h3>
+                <p>Here is a brief summary of the blog post content. You can include information about what the blog post covers and why it's relevant to your audience.</p>
+                <a href="blog-post-2.html" class="read-more-link">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Visually distinct footer -->
-    <footer class="footer">
-        <p>&copy; 2023 Technostudy Online School</p>
+     <!-- Footer Section (You can copy your existing footer here) -->
+     <div class="footer-container">
+        <footer class="footer">
+            <div class="footer-column">
+            <h5>Curriculums</h5>
+            <ul>
+                <li><a href="#">National Senior Certificate (CAPS)</a></li>
+                <li><a href="#">Cambridge International</a></li>
+                <li><a href="#">Adult Matric (ASC)</a></li>
+                <li><a href="#">Free Curriculum (CAPS)</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h5>About Us</h5>
+            <ul>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Guardian ConnectED App</a></li>
+                <li><a href="#">Fees</a></li>
+                <li><a href="#">Guardian Testimonials</a></li>
+                <li><a href="#">Extracurriculars</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h5>Resources</h5>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Free Guides</a></li>
+                <li><a href="#">High School Cost Calculator</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Policies</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h5>Newsletter Sign-Up</h5>
+            <p>Stay up to date with our latest news and updates. Subscribe to our newsletter.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.facebook.com/yourfacebookpage" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/yourtwitterpage" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/yourinstagrampage" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            
+            <address>
+                <h5>Contact</h5
+                Email: <a href="mailto:info@technostudyonline.co.za">info@technostudyonline.co.za</a><br>
+                Tel: <a href="tel:+27211401792">+27 21 140 1792</a>
+            </address>
+        </div>
+        
+        <div class="footer-column">
+            <h5>Useful Links</h5>
+            <ul>
+                <li><a href="#">Portal Login</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">System Status</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column sponsors">
+            <div class="sponsors-logo">
+                <img src="/handshake.png" alt="Sponsor 1">
+                <img src="/bitcoin.png" alt="Sponsor 2">
+                <!-- Add more sponsor logos as needed -->
+            </div>
+        </div>
+        
+        <hr class="footer-line">
+        
+        <div class="footer-column">
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Rules & Procedures</a></li>
+                <li><a href="#">Accreditation</a></li>
+            </ul>
+        </div>
+        
     </footer>
+    <p>Copyright&copy; 2023 Technostudy Online School | All Rights Reserved.</p>
+    </div>
+  
 </body>
 </html>
 

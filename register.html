@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <title>Registration Form</title>
+</head>
+
+<header>
+    <div class="logo">
+        <h6>Technostudy Online School</h6>
+        <img src="img/logo.png" alt="Technostudy logo">
+    </div>
+    <nav>
+        <ul class="mega-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="fees.html">Fees</a></li>
+            <li class="mega-menu-item">
+                <a href="#">Our School</a>
+                <div class="mega-menu-content">
+                    <ul>
+                        <li><a href="#">Accreditation</a></li>
+                        <li><a href="#">School Culture</a></li>
+                        <li><a href="#">Primary School</a></li>
+                        <li><a href="#">High School</a></li>
+                        <li><a href="#">How Technostudy Works</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mega-menu-item">
+                <a href="#">Curriculum</a>
+                <div class="mega-menu-content">
+                    <ul>
+                        <li><a href="#">Cambridge Curriculum</a></li>
+                        <li><a href="#">CAPS Curriculum</a></li>
+                        <li><a href="#">Free Curriculum</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="extramurals.html">Extramurals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cta-buttons">
+        <button>Download Info Pack</button>
+        <button>Login</button>
+        <button>Enrol</button>
+    </div>
+</header>
+
+<body>
+    <header>
+        <h3>Gurdian or Parent Information</h3>
+     
+    </header>
+    <div class="registration-container">
+        <div class="registration-image">
+            <img src="your_image.jpg" alt="Registration Image">
+        </div>
+        <div class="registration-form">
+            <h2>Guardian or Adult Information</h2>
+            <p>Please select an option below or fill in your details to create an account.</p>
+            <div class="registration-options">
+                <label for="google-login">Log in/Sign up with Google</label>
+                <input type="checkbox" id="google-login" name="google-login">
+            </div>
+
+
+            <form action="submit_registration.php" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="date-of-birth">Date of Birth:</label>
+                <select id="year" name="year">
+                    <!-- Options for years -->
+                </select>
+                <select id="month" name="month">
+                    <!-- Options for months -->
+                </select>
+                <select id="day" name="day">
+                    <!-- Options for days -->
+                </select>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <div id="phone-section">
+                    <div>
+                        <label for="dialing-code">Dialing Code</label>
+                        <select id="dialing-code" name="dialing-code">
+                            <!-- Your options here -->
+                        </select>
+                    </div>
+            
+                    <div>
+                        <label for="mobile-number">Mobile Number</label>
+                        <input type="text" id="mobile-number" name="mobile-number" required>
+                    </div>
+                </div>
+            
+                <label for="how-heard">How did you hear about UCT Online High School?</label>
+                <input type="text" id="how-heard" name="how-heard">
+
+                <input type="submit" value="START APPLICATION">
+            </form>
+            <p>Already have an account? <a href="#">Click here to login</a>.</p>
+            <p><a href="#">Contact Support</a></p>
+        </div>
+    </div>
+</body>
+</html>

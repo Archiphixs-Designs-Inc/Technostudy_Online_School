@@ -15,21 +15,41 @@ body {
 /* Header Styles */
 .header {
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-color: #f4f4f4;
+    color: #01ff5a;
     padding: 1rem;
 }
 
 .header h1 {
     font-size: 2.5rem;
 }
+/* Slider Styles */
+.slider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 300px; /* Set your desired height */
+}
+
+.slider img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s;
+}
+
+/* Hide all but the first image */
+.slider img:not(:first-child) {
+    opacity: 0;
+}
 
 /* Navigation Styles */
 nav {
-    background-color: #333;
+    background-color: #ffffff;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
+    text-align: left;
+    
 }
 
 nav ul {
@@ -42,9 +62,293 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; /* Change this to your desired background color */
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.cta-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #3498db; /* Change this to your desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Add this style to make the mega menu appear on hover */
+.mega-menu-item:hover .mega-menu-content {
+    display: block;
+}
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Change this to your desired background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.mega-menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mega-menu-content ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Change this to your desired border color */
+}
+
+.mega-menu-content ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+/* Fixed Navigation Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Adjust the position after scrolling */
+.navbar.scrolled {
+    top: -50px; /* You can adjust this value based on your design preferences */
+}
+/*..........................................*/
+/* Horizontal Section Styles */
+.horizontal-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.content p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.content a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.content a:hover {
+    background: #05e74d;
+}
+
+.horizontal-section img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Horizontal Section Styles */
+.horizontal-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+/* Reverse the image and content for this section */
+.horizontal-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: right; /* Adjust text alignment for the reversed section */
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    color: #09d11ad2;
+}
+
+.content p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.content a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #02fb61c8;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.content a:hover {
+    background: #04d5e4;
+}
+
+.horizontal-section img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+
+/* Card Container Styles */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Card Styles */
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.card a {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #fff;
+    background: #04d5e4;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.card a:hover {
+    background: #02fb61c8;
+}
+
+
+/* Feature Section Styles */
+.feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.feature-card {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    color: #777;
+}
+
 
 /* Main Content Styles */
 main {
@@ -70,7 +374,1925 @@ p {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+}
+
+
+/* Fees Banner Section Styles */
+.fees-banner {
+    background-image: url('/img/img6.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #555;
+    padding: 100px 0;
+    position: relative;
+    width: 100%; /* This makes the banner span the full width of the page */
+}
+
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 70%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.fees-banner h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.fees-banner p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+.button.secondary {
+    background: #555;
+}
+
+.button:hover {
+    background: #777;
+}
+
+/* Styling for Heading with Two Colors and Separator */
+.fees-content h2 {
+    text-align: center;
+    position: relative;
+    color: #333; /* Default color for the heading */
+}
+
+.heading-left {
+    color: #0078D4; /* Left part of the heading with a different color */
+}
+
+.heading-right {
+    color: #FF6600; /* Right part of the heading with a different color */
+}
+
+.separator {
+    width: 100%;
+    border: 1px solid #999; /* Separator line color */
+    margin: 20px 0;
+}
+
+/* Styling for Horizontal Layout */
+.horizontal-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.horizontal-layout h3 {
+    flex-basis: calc(30% - 10px);
+    color: #0078D4; /* Left side h3 color */
+}
+
+.horizontal-layout p {
+    flex-basis: calc(70% - 10px);
+    margin-left: 20px; /* Space between h3 and p */
+    color: #555; /* Default color for the paragraph */
+}
+
+
+/* Pricing Table Styles with Logos and Distinct Colors */
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.column:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.tick {
+    font-size: 1.2rem;
+    color: #33CC33; /* Green color for checkmarks */
+    margin-right: 10px;
+}
+
+/* Distinct Colors for Column Headers */
+.intermediate h2 {
+    background: #0078D4; /* Intermediate Phase color */
+}
+
+.senior h2 {
+    background: #FF6600; /* Senior Phase color */
+}
+
+.fet h2 {
+    background: #40ff1a; /* FET Phase color */
+}
+
+/* Logos */
+.column img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Styling for Cambridge Assessment International Education Section */
+.cambridge-content h2 {
+    text-align: center;
+    position: relative;
+    color: #333; /* Default color for the heading */
+}
+
+.cambridge-content .heading-left {
+    color: #0078D4; /* Left part of the heading with a different color */
+}
+
+.cambridge-content .heading-right {
+    color: #FF6600; /* Right part of the heading with a different color */
+}
+
+.cambridge-content .separator {
+    width: 100%;
+    border: 1px solid #999; /* Separator line color */
+    margin: 20px 0;
+}
+
+/* Styling for Horizontal Layout */
+.cambridge-content .horizontal-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cambridge-content h3 {
+    flex-basis: calc(30% - 10px);
+    color: #0078D4; /* Left side h3 color */
+}
+
+.cambridge-content p {
+    flex-basis: calc(70% - 10px);
+    margin-left: 20px; /* Space between h3 and p */
+    color: #333; /* Default color for the paragraph */
+}
+
+/* Pricing Table Styles for Cambridge Assessment International Education Curriculum */
+.pricing-table-cambridge {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.pricing-table-cambridge .column {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pricing-table-cambridge .column:hover {
+    transform: scale(1.05);
+}
+
+.pricing-table-cambridge h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.pricing-table-cambridge .features {
+    margin: 20px 0;
+}
+
+.pricing-table-cambridge .feature {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.pricing-table-cambridge .tick {
+    font-size: 1.2rem;
+    color: #33CC33; /* Green color for checkmarks */
+    margin-right: 10px;
+}
+
+/* Pricing Table Styles with Branded Column Headers */
+.pricing-table-cambridge {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+/* Column 1: Primary School (Grade 4-7) */
+.column-primary {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    background: #0078D4; /* Brand color for Primary School */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Column 2: Junior GSCE Certificate (Form 1-2) */
+.column-junior {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    background: #FF6600; /* Brand color for Junior GSCE Certificate */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Column 3: Ordinary Level (Form 3-4) */
+.column-ordinary {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    background: #FF3333; /* Brand color for Ordinary Level */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Column 4: Advanced Subsidiary Level (AS) & Advanced Level */
+.column-advanced {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    background: #6600CC; /* Brand color for Advanced Subsidiary Level & Advanced Level */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pricing-table-cambridge .column:hover {
+    transform: scale(1.05);
+}
+
+.pricing-table-cambridge h3 {
+    font-size: 1.8rem;
+    color: #14f52e; /* White color for headers */
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-table-cambridge .features {
+    margin: 20px 0;
+}
+
+.pricing-table-cambridge .feature {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.pricing-table-cambridge .tick {
+    font-size: 1.2rem;
+    color: #33CC33; /* Green color for checkmarks */
+    margin-right: 10px;
+}
+
+/* Call-Out Banner Styles */
+.callout-banner {
+    position: relative;
+    background: #000000;
+    color: #1ce451;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.background-image {
+    background-image: url('img/img.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2; /* Adjust the opacity to your preference */
+}
+
+.banner-content {
+    z-index: 1;
+}
+
+.callout-banner h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.callout-banner p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.consultant-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0078D4; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.consultant-button:hover {
+    background: #005EA6; /* Button background color on hover */
+}
+
+/* Style for the How it Works Section */
+.how-it-works-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.how-it-works-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video {
+    flex: 1;
+    padding: 20px;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the How it Works Section */
+.how-it-works-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.how-it-works-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.video {
+    flex: 1;
+    padding: 20px;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Discounts Section Styles */
+.discounts-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: #fff;
+    color: #333;
+}
+
+.image-container {
+    flex-basis: 40%;
+    margin-right: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    flex-basis: 60%;
+}
+
+.discounts-section h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.discounts-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.discounts-section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Testimonial Section Styles */
+/* Testimonial Section Styles */
+.testimonial-section {
+    background: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.testimonial-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    flex: 0 0 auto;
+    max-width: 400px;
+    animation: swipe 10s linear infinite alternate; /* Add swipe animation */
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-author p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonial-card {
+    /* ... (other styles) */
+
+    /* Add this to limit the width of the testimonial content */
+    max-width: 400px;
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.testimonial-content {
+    /* ... (other styles) */
+
+    /* Add this to limit the width of the content within the card */
+    max-width: 100%; /* Adjust the width as needed */
+}
+
+/* Animation Keyframes for Swipe Effect */
+@keyframes swipe {
+    0%, 100% {
+        transform: translateX(0); /* Initial and final position */
+    }
+    25% {
+        transform: translateX(-100%); /* Swipe from right to left */
+    }
+    75% {
+        transform: translateX(100%); /* Move back to the right */
+    }
+}
+
+
+
+
+/* Media Query for Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+    .discounts-section {
+        flex-direction: column;
+    }
+
+    .image-container {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: 40px;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.faq-item {
+    margin-top: 20px;
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.faq-answer {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: none; /* Initially hide the answer */
+}
+
+/* Style for the Callout Banner */
+.callout-banner {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.callout-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.callout-text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.callout-text p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Style for the Blog Section */
+.blog-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.blog-post {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.read-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.read-more-link:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the Blog Section */
+.blog-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust the gap as needed */
+}
+
+.blog-post {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.blog-post p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.read-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.read-more-link:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*A Cambridge International Curriculum page*/
+/* Style for the Header Banner */
+.header-banner {
+    background-image: url("img/img7.png"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 10px 0 0;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+}
+
+
+
+/* Style for the Card Section */
+/* Style for the Card Section */
+.stage-cards {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.tall-card {
+    flex: 0 0 calc(33.33% - 20px);
+    height: 400px; /* Adjust the height as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the Solution Section */
+.solution-section {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+}
+
+.solution-container {
+    text-align: center;
+}
+
+.solution-container h2 {
+    color: #007BFF;
+    font-size: 1.5rem;
+}
+
+.solution-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.solution-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 150px;
+}
+
+#filter-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#filter-button:hover {
+    background-color: #0056b3;
+}
+
+#reset-button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#reset-button:hover {
+    background-color: #999;
+}
+
+/* Style for the Solution Section */
+.solution-section {
+    border: 8px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+}
+
+.solution-container {
+    text-align: center;
+}
+
+.solution-container h2 {
+    color: #fff; /* Text color for h2 */
+    background-color: #007BFF; /* Background color for h2 */
+    font-size: 1.5rem;
+    padding: 10px 0; /* Adjust as needed */
+    margin: 0; /* Remove default margin */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.solution-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    background-color: #f5f5f5; /* Background color for paragraph */
+    padding: 10px; /* Adjust as needed */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*Features table*/
+.features-table {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.table-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.table-column h3 {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.table-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.table-column li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.table-column .branded {
+    background-color: #28a745;
+}
+
+.table-column .branded-alt {
+    background-color: #dc3545;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    background-color: #dc3545;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.table-column li:nth-child(even) {
+    background-color: #f0f0f0; /* Dull color 1 */
+}
+
+.table-column li:nth-child(odd) {
+    background-color: #e0e0e0; /* Dull color 2 */
+}
+.table-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.table-column li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text within the list item */
+}
+/*Form Section for downloading bronchure*/
+.contact-form-section {
+    display: flex;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    padding: 20px;
+    color: #fff; /* Text color on the form section */
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background color for the form */
+    padding: 20px;
+    width: 60%; /* Adjust the width as needed */
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-group select {
+    appearance: none;
+}
+
+.form-group p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007BFF; /* Button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+.contact-image {
+    width: 40%; /* Adjust the width as needed */
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-image h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+/*Contact Page**/
+
+.banner {
+    background-color: #0340e7;
+    color: #fff;
+    padding: 2em;
+    margin-top: auto;
+    text-align: center;
+    min-height: 200px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.contact-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(139, 139, 141, 0.208);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.contact-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-card h2 {
+    margin-top: 10px;
+    color: #3e67d6;
+}
+
+.contact-card p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.contact-card a {
+    display: inline-block;
+    background-color: #38e508;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-card a:hover {
+    background-color: #0279f8;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    .contact-cards {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
+
+
+/* CSS for Contact Form Section */
+.contact-form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.contact-form {
+    width: 40%;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #366acb;
+    margin-bottom: 15px;
+}
+
+.contact-form p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+form#contactForm {
+    width: 55%;
+}
+
+form#contactForm h2 {
+    font-size: 24px;
+    color: #2a68af;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.terms-checkboxes {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/*Exramural Activities Page*/
+/* Styles for the header */
+.extramural-header {
+    background-image: url('img/img10.jpg'); /* Replace 'header-background.jpg' with your image path */
+    background-size: cover;
+    color: rgb(7, 62, 244);
+    text-align: center;
+    padding: 100px 0; /* Adjust as needed */
+    min-height: 450px;
+}
+
+/* Styles for the centered image */
+.center-image {
+    display: flex;
+    margin: 10px 10px auto;
+    width: 100%; /* Image stretches across the page */
+    max-width: 250px; /* Limit the maximum width if needed */
+    min-height: 150px;
+}
+
+/* Additional styling for paragraphs */
+p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/* Styles for the extramural cards section 
+
+/* Styles for each card */
+#card-img {
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+   
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: scale(1.07);
+}
+
+#card-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Additional styling for buttons */
+button {
+    background-color: #34db42;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* Another section**/
+.section-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(200, 250, 17, 0.9); /* Set your preferred background color with an alpha value */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Add border-radius for a rounded look */
+}
+
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-text {
+    width: 45%; /* Adjust width as needed */
+}
+
+.section-text h3 {
+    margin-bottom: 5px; /* Add space between heading and paragraph */
+}
+
+.section-text h3 span {
+    color: #3498db; /* Branding color for the last text in the heading */
+}
+
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px; /* Add rounder borders to the cards */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card h4 {
+    margin: 0;
+}
+
+.learn-more-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* Another section**/
+.section-container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(17, 172, 250, 0.9); /* Set your preferred background color with an alpha value */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Add border-radius for a rounded look */
+}
+
+
+.section-content-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-text-2 {
+    width: 45%; /* Adjust width as needed */
+}
+
+.section-text-2 h3 {
+    margin-bottom: 5px; /* Add space between heading and paragraph */
+}
+
+.section-text-2 h3 span {
+    color: #3498db; /* Branding color for the last text in the heading */
+}
+
+/*Sponsered Section**/
+
+
+.partner-logos {
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo-row img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+/* Add any additional styling as needed */
+
+/** Enrol section**/
+
+.fee-enrollment-section {
+    text-align: center;
+}
+
+.banner {
+    color: rgba(210, 100, 100, 0.9);
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 45%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #4285f4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+/***Reserve your seat page***/
+
+
+.header {
+    text-align: center;
+    background-color: #890303;
+    padding: 20px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #b64646;
+    border: 1px solid #9b1d1d;
+    border-radius: 5px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #4caf50;
+    color: rgb(188, 5, 5);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+  
+/**Blog section**/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.blog-card {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.date-banner {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 5px;
+    font-size: 12px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+.read-article-btn {
+    display: block;
+    margin: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.read-article-btn:hover {
+    background-color: #45a049;
+}
+
+
+/***Testimonials**/
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    width: 300px;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.rating {
+    color: #FFD700; /* Gold color for stars */
+    margin-bottom: 10px;
+}
+
+.arrow-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+/* Footer Styles */
+.footer-container {
+    background: #07f178;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer {
+    position: static; /* Set position to static */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex-basis: calc(25% - 20px);
+    margin-right: 20px;
+}
+
+.footer h5 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Newsletter Sign-Up Form Styles */
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background: #0078D4; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Social Links Styles */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px; /* Adjust the size of social media icons as needed */
+    height: 30px;
+}
+
+/* Style for "Additional Information" links */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    display: inline; /* Display links in a row */
+    margin-right: 10px; /* Add space between links */
+}
+
+/* Style for "|" character */
+.footer-column ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px; /* Space between "|" and the next link */
+    color: #fff; /* Color of the "|" character */
+}
+
+
+/* Media Query for Responsive Design (adjust as needed) */
+@media (max-width: 768px) {
+    .footer-column {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .newsletter-form {
+        margin-top: 20px;
+    }
 }
